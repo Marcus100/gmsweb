@@ -55,7 +55,7 @@
         <!-- MOBILE NAVIGATION MENU-->
         <div
           id="menu"
-          class="z-20 fixed inset-0 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-9 pt-24 pb-0 tracking-widest text-gray-100 uppercase divide-y divide-orange-500 bg-sky-900"
+          class="z-20 fixed inset-0 hidden flex-col items-center self-end w-full h-full m-h-screen pt-24 pb-0 tracking-widest text-gray-100 uppercase divide-y-2 divide-orange-500 bg-sky-900"
         >
           <a href="#" class="hover:text-orange-400">Products & Services</a>
           <a href="#" class="hover:text-orange-400">Resourcess</a>
@@ -81,7 +81,7 @@
       <section id="tabs" class="mx-4 my-4">
         <!-- Tabs/Panels Container -->
         <div
-          class="container relative max-w-4xl mx-auto bg-sky-50 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="container relative max-w-4xl mx-auto bg-sky-50 border border-gray-200 rounded-lg shadow"
         >
           <div class="bg-tabs"></div>
           <!-- Tabs Flex Container -->
@@ -137,27 +137,24 @@
           </div>
 
           <!-- Tab Panels -->
-          <div id="panels" class="container text-gray-700">
+          <div id="panels" class="container">
             <!-- Panel 1 -->
-            <div class="flex flex-col md:flex-row md:space-x-7 panel panel-1">
-              <!-- Panel Image -->
+            <div class="flex flex-col md:flex-row panel panel-1">
               <!-- Panel Content -->
-              <div class="flex flex-col px-2">
-                <h3
-                  class="text-xl mx-auto font-semibold text-left md:mt-0 md:text-left"
-                >
+              <div class="flex flex-col">
+                <h3 class="text-xl mx-auto font-semibold">
                   Current Conditions
                 </h3>
                 <div class="border"></div>
-                <div class="flex items-start space-x-16">
+                <div class="flex flex-col p-2">
                   <div>
                     <span
-                      ><img src="/images/logos/cloudy.png" alt="" class="w-32"
+                      ><img src="/images/logos/cloudy.png" alt="" class="w-28"
                     /></span>
                     <p>Party cloudy and windy conditions dominate Grenada</p>
                   </div>
                   <div>
-                    <span class="flex items-center text-left">
+                    <span class="flex">
                       <img
                         src="/images/currentwx/wi-time-3.svg"
                         alt=""
@@ -165,7 +162,7 @@
                       />
                       <p>Time:</p>
                     </span>
-                    <span class="flex items-center text-left">
+                    <span class="flex">
                       <img
                         src="/images/currentwx/wi-strong-wind.svg"
                         alt=""
@@ -173,7 +170,7 @@
                       />
                       <p>Wind:</p>
                     </span>
-                    <span class="flex items-center text-left">
+                    <span class="flex">
                       <img
                         src="/images/currentwx/wi-thermometer.svg"
                         alt=""
@@ -181,7 +178,7 @@
                       />
                       <p>Air Temperature:</p>
                     </span>
-                    <span class="flex items-center text-left">
+                    <span class="flex">
                       <img
                         src="/images/currentwx/wi-humidity.svg"
                         alt=""
@@ -189,7 +186,7 @@
                       />
                       <p>Relative Humidity:</p>
                     </span>
-                    <span class="flex items-center text-left">
+                    <span class="flex">
                       <img
                         src="/images/currentwx/wi-rain.svg"
                         alt=""
@@ -197,7 +194,7 @@
                       />
                       <p>Rainfall:</p>
                     </span>
-                    <span class="flex items-center text-left">
+                    <span class="flex">
                       <img
                         src="/images/currentwx/wi-barometer.svg"
                         alt=""
@@ -332,7 +329,9 @@
 
     <!-- FOOTER -->
     <footer class="bg-sky-900">
-      <div class="max-w-7xl mx-auto p-5 text-gray-300">
+      <div
+        class="max-w-7xl items-center justi-center mx-auto p-5 text-gray-300"
+      >
         <div>
           <div>
             <a href="#" class="flex items-center">
