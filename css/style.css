@@ -555,11 +555,19 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-10 {
@@ -808,6 +816,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -896,6 +908,11 @@ video {
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {
@@ -1205,6 +1222,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:static {
+    position: static;
+  }
+
   .md\:order-1 {
     order: 1;
   }
@@ -1247,6 +1268,10 @@ video {
 
   .md\:row-span-3 {
     grid-row: span 3 / span 3;
+  }
+
+  .md\:m-0 {
+    margin: 0px;
   }
 
   .md\:mx-0 {
@@ -1316,6 +1341,10 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
   .md\:space-x-7 > :not([hidden]) ~ :not([hidden]) {
