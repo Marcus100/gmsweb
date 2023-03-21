@@ -55,12 +55,61 @@
         <!-- MOBILE NAVIGATION MENU-->
         <div
           id="menu"
-          class="z-20 fixed inset-0 hidden flex-col items-center self-end w-full h-full m-h-screen pt-24 pb-0 tracking-widest text-gray-100 uppercase divide-y-2 divide-orange-500 bg-sky-900"
+          class="z-20 fixed inset-0 hidden flex-col items-center self-end w-full h-full m-h-screen pt-24 pb-0 tracking-widest text-gray-100 uppercase bg-sky-900"
         >
-          <a href="#" class="hover:text-orange-400">Products & Services</a>
-          <a href="#" class="hover:text-orange-400">Resourcess</a>
-          <a href="#" class="hover:text-orange-400">About Us</a>
-          <a href="#" class="hover:text-orange-400">Contact Us</a>
+          <a
+            href="#"
+            class="hover:text-orange-400 border-b-2 border-b-orange-500 text-lg"
+            >TODAY'S FORECAST</a
+          >
+          <a
+            href="#"
+            class="hover:text-orange-400 border-b-2 border-b-orange-500 text-lg mt-4"
+            >Products & Services</a
+          >
+          <a href="#" class="hover:text-orange-400 text-sm mt-1"
+            >Watches & Warnings</a
+          >
+          <a href="#" class="hover:text-orange-400 text-sm mt-1"
+            >Daily Briefing</a
+          >
+          <a href="#" class="hover:text-orange-400 text-sm mt-1"
+            >Tropical Weather Outlook</a
+          >
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">Reports</a>
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">Climatology</a>
+          <a href="#" class="hover:text-orange-400 text-sm mt-1"
+            >Earthquake & Tsunami</a
+          >
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">Aviation</a>
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">Instruments</a>
+          <a href="#" class="hover:text-orange-400 text-sm mt-1"
+            >Impact-based Forecast</a
+          >
+          <a
+            href="#"
+            class="hover:text-orange-400 border-b-2 border-b-orange-500 text-lg mt-4"
+            >Resources</a
+          >
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">Glossary</a>
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">FAQs</a>
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">Blog</a>
+          <a href="#" class="hover:text-orange-400 text-sm mt-1"
+            >Useful Links</a
+          >
+          <a
+            href="#"
+            class="hover:text-orange-400 border-b-2 border-b-orange-500 text-lg mt-4"
+            >About Us</a
+          >
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">History</a>
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">Mission</a>
+          <a href="#" class="hover:text-orange-400 text-sm mt-1">Careers</a>
+          <a
+            href="#"
+            class="hover:text-orange-400 border-b-2 border-b-orange-500 text-lg mt-4"
+            >Contact Us</a
+          >
         </div>
       </nav>
     </header>
@@ -69,12 +118,12 @@
       <!-- ALERT SECTION -->
       <section>
         <div
-          class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 mx-5 p-2 space-x-2 text-base"
+          class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-3xl mt-2 mx-auto p-2 space-x-2 text-base"
           role="alert"
         >
           <div class="mx-auto">
-            <strong class="font-bold">No alerts!</strong>
-            <span>Currently, there are no alerts in effect.</span>
+            <!-- <strong class="font-bold">No alerts!</strong> -->
+            <span>Currently, there are no alerts in effect!</span>
           </div>
         </div>
       </section>
@@ -97,7 +146,7 @@
                   class="pt-2 border-b-4 border-orange-600"
                   data-target="panel-1"
                 >
-                  Now
+                  This Hour
                 </div>
               </div>
 
@@ -137,7 +186,7 @@
             <!-- Tab Panels -->
             <div id="panels" class="container">
               <!-- Panel 1 -->
-              <div class="flex flex-col md:flex-row panel panel-1">
+              <div class="flex flex-col panel panel-1">
                 <!-- Panel Content -->
                 <div class="flex flex-col">
                   <div class="flex">
@@ -165,71 +214,75 @@
                       /></span>
                       <p>Party cloudy and windy conditions dominate Grenada</p>
                     </div>
-                    <div>
-                      <span class="flex">
-                        <img
-                          src="/images/currentwx/wi-strong-wind.svg"
-                          alt=""
-                          class="w-8"
-                        />
-                        <p>Wind:</p>
-                      </span>
-                      <span class="flex">
-                        <img
-                          src="/images/currentwx/wi-thermometer.svg"
-                          alt=""
-                          class="w-8"
-                        />
-                        <p>Temperature:</p>
-                      </span>
-                      <span class="flex">
-                        <img
-                          src="/images/currentwx/wi-humidity.svg"
-                          alt=""
-                          class="w-8"
-                        />
-                        <p>Humidity:</p>
-                      </span>
-                      <span class="flex">
-                        <img
-                          src="/images/currentwx/wi-rain.svg"
-                          alt=""
-                          class="w-8"
-                        />
-                        <p>Rainfall:</p>
-                      </span>
-                      <span class="flex">
-                        <img
-                          src="/images/currentwx/wi-barometer.svg"
-                          alt=""
-                          class="w-8"
-                        />
-                        <p>Pressure:</p>
-                      </span>
-                      <span class="flex">
-                        <img
-                          src="/images/currentwx/wi-barometer.svg"
-                          alt=""
-                          class="w-8"
-                        />
-                        <p>High/Low:</p>
-                      </span>
-                      <span class="flex">
-                        <img
-                          src="/images/currentwx/wi-barometer.svg"
-                          alt=""
-                          class="w-8"
-                        />
-                        <p>Dew Point:</p>
-                      </span>
-                      <span class="flex">
-                        <img
-                          src="/images/currentwx/wi-barometer.svg"
-                          alt=""
-                          class="w-8"
-                        />
-                        <p>Visibility:</p>
-                      </span>
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <span class="flex">
+                          <img
+                            src="/images/currentwx/wi-strong-wind.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                          <p>Wind:</p>
+                        </span>
+                        <span class="flex">
+                          <img
+                            src="/images/currentwx/wi-thermometer.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                          <p>Temperature:</p>
+                        </span>
+                        <span class="flex">
+                          <img
+                            src="/images/currentwx/wi-humidity.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                          <p>Humidity:</p>
+                        </span>
+                        <span class="flex">
+                          <img
+                            src="/images/currentwx/wi-rain.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                          <p>Rainfall:</p>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="flex">
+                          <img
+                            src="/images/currentwx/wi-barometer.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                          <p>Pressure:</p>
+                        </span>
+                        <span class="flex">
+                          <img
+                            src="/images/currentwx/wi-barometer.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                          <p>High/Low:</p>
+                        </span>
+                        <span class="flex">
+                          <img
+                            src="/images/currentwx/wi-barometer.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                          <p>Dew Point:</p>
+                        </span>
+                        <span class="flex">
+                          <img
+                            src="/images/currentwx/wi-barometer.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                          <p>Visibility:</p>
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -309,12 +362,12 @@
 
       <!-- CONTENT SECTION -->
       <section>
-        <div>
+        <div class="mx-3">
           <div class="flex flex-col md:flex-row max-w-5xl text-sm">
-            <div>
+            <div class="md:w-1/2">
               <!-- DAILY BRIEFING -->
               <div
-                class="max-w-sm mx-auto bg-sky-50 border border-gray-200 rounded-lg shadow my-4 overflow-hidden"
+                class="mx-auto bg-sky-50 border border-gray-200 rounded-lg shadow overflow-hidden"
               >
                 <a href="#">
                   <img
@@ -324,11 +377,13 @@
                 </a>
                 <div class="p-2">
                   <a href="#">
-                    <h5 class="mb-2 text-lg font-bold tracking-tight">
+                    <h5
+                      class="mb-2 text-lg font-bold tracking-tight text-center"
+                    >
                       Daily Briefing
                     </h5>
                   </a>
-                  <p class="mb-3 font-normal">
+                  <p class="mb-3 font-normal text-center">
                     Fair weather continues to dominate the Windward Islands as
                     weak ridging dominates the area. An incoming cold front is
                     approaching the Windward Islands from the north.
@@ -355,25 +410,63 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="md:w-1/2">
               <div>
-                <section>
-                  <div
-                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 mx-3 p-2 space-x-2 text-sm"
-                    role="alert"
-                  >
-                    <div class="mx-auto">
-                      <strong class="font-bold"
-                        >TROPICAL WEATHER OUTLOOK</strong
+                <!-- Card -->
+                <div
+                  class="mx-auto mt-2 bg-sky-50 border border-gray-200 rounded-lg shadow overflow-hidden"
+                >
+                  <!-- Flex Container -->
+                  <div class="flex rounded-l-xl">
+                    <div>
+                      <!-- Image -->
+                      <img
+                        src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                        alt=""
+                        class="w-56"
+                      />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="pl-1 pb-1">
+                      <h2 class="font-medium text-left">
+                        Tropical Weather Outlook
+                      </h2>
+
+                      <p
+                        class="max-w-xs my-4 text-xs leading-5 tracking-wide text-left"
                       >
+                        Tropical wave expected to traverse Grenada tomorrow
+                        morning.
+                      </p>
+
+                      <a
+                        href="#"
+                        class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300"
+                      >
+                        Read more
+                        <svg
+                          aria-hidden="true"
+                          class="w-4 h-4 ml-2 -mr-1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </a>
                     </div>
                   </div>
-                </section>
+                </div>
               </div>
               <div>
                 <section>
                   <div
-                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 mx-3 p-2 space-x-2 text-sm"
+                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 p-2 space-x-2 text-sm"
                     role="alert"
                   >
                     <div class="mx-auto">
@@ -385,11 +478,11 @@
             </div>
           </div>
           <div class="flex flex-col md:flex-row">
-            <div>
+            <div class="md:w-1/2">
               <div>
                 <section>
                   <div
-                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 mx-3 p-2 space-x-2 text-sm"
+                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 p-2 space-x-2 text-sm"
                     role="alert"
                   >
                     <div class="mx-auto">
@@ -401,7 +494,7 @@
               <div>
                 <section>
                   <div
-                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 mx-3 p-2 space-x-2 text-sm"
+                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 p-2 space-x-2 text-sm"
                     role="alert"
                   >
                     <div class="mx-auto">
@@ -412,10 +505,10 @@
               </div>
             </div>
             <div>
-              <div>
+              <div class="md:w-1/2">
                 <!-- REPORTS -->
                 <div
-                  class="max-w-sm mx-auto bg-sky-50 border border-gray-200 rounded-lg shadow my-4 overflow-hidden"
+                  class="mx-auto bg-sky-50 border border-gray-200 rounded-lg shadow my-4 overflow-hidden"
                 >
                   <a href="#">
                     <img
