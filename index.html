@@ -364,7 +364,7 @@
       <!-- CONTENT SECTION -->
       <section>
         <div
-          class="p-4 max-w-4xl grid gap-1 md:gap-4 md:grid-cols-2 md:grid-rows-5"
+          class="p-4 max-w-4xl grid gap-y-3 md:gap-x-6 md:grid-cols-2 md:grid-rows-5"
         >
           <!--  DAILY BRIEFING-->
           <div class="md:row-span-3 md:order-1">
@@ -415,50 +415,38 @@
           <div class="md:order-2">
             <!-- TROPICAL WEATHER OUTLOOK CONTAINER -->
             <!-- HORIZONTAL CARD -->
-            <div class="bg-sky-50 mx-auto rounded shadow overflow-hidden">
-              <!-- Flex Container -->
-              <div class="flex rounded md:flex-row-reverse">
-                <div>
-                  <!-- Image -->
-                  <img
-                    src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                    alt=""
-                    class="w-72"
-                  />
-                </div>
+            <div class="bg-sky-50 mx-auto overflow-hidden rounded">
+              <a href="#">
+                <!-- Flex Container -->
+                <div class="flex md:flex-row-reverse">
+                  <div>
+                    <!-- Image -->
+                    <img
+                      src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                      alt=""
+                      class="w-72 object-cover"
+                    />
+                  </div>
 
-                <!-- Content -->
-                <div class="pl-2 pr-1 py-1">
-                  <h2 class="font-medium text-left uppercase">
-                    Tropical Weather Outlook
-                  </h2>
-
-                  <p class="text-xs">Last updated: 10:00 p.m. Tues</p>
-
-                  <p class="mt-1">
-                    Tropical wave expected to traverse Grenada tomorrow morning.
-                  </p>
-                  <a
-                    href="#"
-                    class="font-medium text-gray-900 hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-sky-300"
-                  >
-                    Continue reading
-                    <svg
-                      aria-hidden="true"
-                      class="w-4 h-4 inline"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
+                  <!-- Content -->
+                  <div class="pl-2 pr-1 pt-1 container items-center">
+                    <h2
+                      class="font-semibold text-base text-left uppercase tracking-tight text-orange-600"
                     >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </a>
+                      Tropical Weather Outlook
+                    </h2>
+
+                    <p class="text-xs text-gray-600">
+                      Tues, Mar 21, 2023, 10:00 AM LST
+                    </p>
+
+                    <p class="mt-1 leading-none">
+                      Tropical wave two expected to traverse Grenada on Tuesday
+                      bringing light to moderate showers.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <!-- WEATHER NEWS -->
@@ -663,7 +651,7 @@
           <a href="#" class="flex items-center">
             <img src="/images/logos/cloudy.png" alt="" class="w-28" />
             <p
-              class="pl-2 font-bold tracking-wide text-xl hover:text-orange-400"
+              class="pl-2 font-bold tracking-wide text-lg hover:text-orange-400"
             >
               Grenada Met Service
             </p>
@@ -769,7 +757,7 @@
               alt="The Grenada Airports' Authority Official Logo"
               class="w-36"
           /></a>
-          <p class="pl-2">
+          <p class="pl-2 text-sm">
             Copyright
             <a href="#" class="hover:text-orange-400 font-semibold underline"
               >Grenada Airports Authority</a
