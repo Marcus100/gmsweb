@@ -118,11 +118,11 @@
       <!-- ALERT SECTION -->
       <section>
         <div
-          class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-3xl mt-2 mx-auto p-2 space-x-2 text-base"
+          class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-3xl mt-2 mx-3 p-2 text-sm"
           role="alert"
         >
           <div class="mx-auto">
-            <!-- <strong class="font-bold">No alerts!</strong> -->
+            <strong class="font-bold">No alerts!</strong>
             <span>Currently, there are no alerts in effect!</span>
           </div>
         </div>
@@ -133,7 +133,7 @@
         <div class="mx-3 mt-2">
           <!-- Tabs/Panels Container -->
           <div
-            class="container relative max-w-4xl bg-sky-50 border border-gray-200 rounded-lg shadow mx-auto"
+            class="container relative max-w-4xl bg-sky-50 border border-gray-200 rounded shadow mx-auto"
           >
             <!-- Tabs Flex Container -->
             <div class="flex justify-between border-b px-2 uppercase">
@@ -362,9 +362,12 @@
 
       <!-- CONTENT SECTION -->
       <section>
-        <div class="mx-3">
-          <div class="flex flex-col md:flex-row max-w-5xl text-sm">
-            <div class="md:w-1/2">
+        <!-- FLEX CONTAINER -->
+        <div>
+          <!-- CONTAINER ONE -->
+          <div class="flex flex-col md:flex-row p-2">
+            <!-- RIGHT CONTAINER 100% -->
+            <div class="md:h-1/2 md:w-1/2">
               <!-- DAILY BRIEFING -->
               <div
                 class="mx-auto bg-sky-50 border border-gray-200 rounded-lg shadow overflow-hidden"
@@ -410,142 +413,115 @@
                 </div>
               </div>
             </div>
-            <div class="md:w-1/2">
-              <div>
-                <!-- Card -->
-                <div
-                  class="mx-auto mt-2 bg-sky-50 border border-gray-200 rounded-lg shadow overflow-hidden"
-                >
-                  <!-- Flex Container -->
-                  <div class="flex rounded-l-xl">
-                    <div>
-                      <!-- Image -->
-                      <img
-                        src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                        alt=""
-                        class="w-56"
-                      />
-                    </div>
+            <!-- LEFT CONTAINER 50/50% -->
+            <div
+              class="md:h-1/2 md:w-1/2 md:flex md:flex-col md:justify-between"
+            >
+              <div class="mt-2">
+                <div>
+                  <!-- Card -->
+                  <div
+                    class="mx-auto mt-2 bg-sky-50 border border-gray-200 rounded-lg shadow overflow-hidden"
+                  >
+                    <!-- Flex Container -->
+                    <div class="flex rounded-l-xl">
+                      <div>
+                        <!-- Image -->
+                        <img
+                          src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                          alt=""
+                          class="w-56"
+                        />
+                      </div>
 
-                    <!-- Content -->
-                    <div class="pl-1 pb-1">
-                      <h2 class="font-medium text-left">
-                        Tropical Weather Outlook
-                      </h2>
+                      <!-- Content -->
+                      <div class="pl-1 pb-1">
+                        <h2 class="font-medium text-left">
+                          Tropical Weather Outlook
+                        </h2>
 
-                      <p
-                        class="max-w-xs my-4 text-xs leading-5 tracking-wide text-left"
-                      >
-                        Tropical wave expected to traverse Grenada tomorrow
-                        morning.
-                      </p>
-
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300"
-                      >
-                        Read more
-                        <svg
-                          aria-hidden="true"
-                          class="w-4 h-4 ml-2 -mr-1"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <p
+                          class="max-w-xs my-4 text-xs leading-5 tracking-wide text-left"
                         >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
-                          ></path>
-                        </svg>
-                      </a>
+                          Tropical wave expected to traverse Grenada tomorrow
+                          morning.
+                        </p>
+
+                        <a
+                          href="#"
+                          class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300"
+                        >
+                          Read more
+                          <svg
+                            aria-hidden="true"
+                            class="w-4 h-4 ml-2 -mr-1"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div>
-                <section>
+              <div class="mt-2">
+                <div>
+                  <!-- Card -->
                   <div
-                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 p-2 space-x-2 text-sm"
-                    role="alert"
+                    class="mx-auto mt-2 bg-sky-50 border border-gray-200 rounded-lg shadow overflow-hidden"
                   >
-                    <div class="mx-auto">
-                      <strong class="font-bold">WEATHER NEWS</strong>
+                    <!-- Flex Container -->
+                    <div class="flex rounded-l-xl">
+                      <div>
+                        <!-- Image -->
+                        <img
+                          src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                          alt=""
+                          class="w-56"
+                        />
+                      </div>
+
+                      <!-- Content -->
+                      <div class="pl-1 pb-1">
+                        <h2 class="font-medium text-left">
+                          Tropical Weather Outlook
+                        </h2>
+
+                        <p
+                          class="max-w-xs my-4 text-xs leading-5 tracking-wide text-left"
+                        >
+                          Tropical wave expected to traverse Grenada tomorrow
+                          morning.
+                        </p>
+
+                        <a
+                          href="#"
+                          class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300"
+                        >
+                          Read more
+                          <svg
+                            aria-hidden="true"
+                            class="w-4 h-4 ml-2 -mr-1"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col md:flex-row">
-            <div class="md:w-1/2">
-              <div>
-                <section>
-                  <div
-                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 p-2 space-x-2 text-sm"
-                    role="alert"
-                  >
-                    <div class="mx-auto">
-                      <strong class="font-bold">OTHER NEWS</strong>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div>
-                <section>
-                  <div
-                    class="flex bg-green-100 border border-green-400 text-green-700 rounded max-w-5xl mt-2 p-2 space-x-2 text-sm"
-                    role="alert"
-                  >
-                    <div class="mx-auto">
-                      <strong class="font-bold">BLOG</strong>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div>
-              <div class="md:w-1/2">
-                <!-- REPORTS -->
-                <div
-                  class="mx-auto bg-sky-50 border border-gray-200 rounded-lg shadow my-4 overflow-hidden"
-                >
-                  <a href="#">
-                    <img
-                      src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-2">
-                    <a href="#">
-                      <h5 class="mb-2 text-lg font-bold tracking-tight">
-                        Reports
-                      </h5>
-                    </a>
-                    <p class="mb-3 font-normal">
-                      Fair weather continues to dominate the Windward Islands as
-                      weak ridging dominates the area. An incoming cold front is
-                      approaching the Windward Islands from the north.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300"
-                    >
-                      Read more
-                      <svg
-                        aria-hidden="true"
-                        class="w-4 h-4 ml-2 -mr-1"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </a>
                   </div>
                 </div>
               </div>
