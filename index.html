@@ -171,18 +171,18 @@
               <!-- Tab 4 -->
               <div
                 class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-orange-500 tab"
-                data-target="panel-3"
+                data-target="panel-4"
               >
-                <div class="pt-2 text-gray-700 uppercase" data-target="panel-3">
+                <div class="pt-2 text-gray-700 uppercase" data-target="panel-4">
                   Wed
                 </div>
               </div>
               <!-- Tab 5 -->
               <div
                 class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-orange-500 tab"
-                data-target="panel-3"
+                data-target="panel-5"
               >
-                <div class="pt-2 text-gray-700 uppercase" data-target="panel-3">
+                <div class="pt-2 text-gray-700 uppercase" data-target="panel-5">
                   Thur
                 </div>
               </div>
@@ -215,7 +215,7 @@
                       <div class="flex">
                         <div>
                           <img
-                            src="/images/currentwx/wi-raindrop.svg"
+                            src="/images/wxsvgs/rainfall.svg"
                             alt=""
                             class="w-8"
                           />
@@ -228,7 +228,7 @@
                       <div class="flex mt-3">
                         <div>
                           <img
-                            src="/images/currentwx/wi-thermometer.svg"
+                            src="/images/wxsvgs/dewpoint.svg"
                             alt=""
                             class="w-8"
                           />
@@ -242,7 +242,7 @@
                       <div class="flex mt-3">
                         <div>
                           <img
-                            src="/images/currentwx/wi-wind-deg.svg"
+                            src="/images/wxsvgs/winddirection.svg"
                             alt=""
                             class="w-8"
                           />
@@ -257,7 +257,7 @@
                       <div class="flex">
                         <div>
                           <img
-                            src="/images/currentwx/wi-barometer.svg"
+                            src="/images/wxsvgs/barometer.svg"
                             alt=""
                             class="w-8"
                           />
@@ -270,7 +270,7 @@
                       <div class="flex mt-3">
                         <div>
                           <img
-                            src="/images/currentwx/wi-humidity.svg"
+                            src="/images/wxsvgs/humidity.svg"
                             alt=""
                             class="w-8"
                           />
@@ -283,7 +283,7 @@
                       <div class="flex mt-3">
                         <div>
                           <img
-                            src="/images/currentwx/visibility-svgrepo-com.svg"
+                            src="/images/wxsvgs/visibility.svg"
                             alt=""
                             class="w-8"
                           />
@@ -299,69 +299,433 @@
               </div>
 
               <!-- Panel 2 -->
-              <div
-                class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-2"
-              >
-                <!-- Panel Image -->
-                <div class="flex justify-center md:w-1/2">
-                  <img
-                    src="images/illustration-features-tab-2.svg"
-                    alt=""
-                    class="relative z-10"
-                  />
-                </div>
+              <div class="flex flex-col panel panel-2">
                 <!-- Panel Content -->
-                <div class="flex flex-col space-y-8 md:w-1/2">
-                  <h3
-                    class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
-                  >
-                    Intelligent search
-                  </h3>
-                  <p class="max-w-md text-center text-grayishBlue md:text-left">
-                    Our powerful search feature will help you find saved sites
-                    in no time at all. No need to trawl through all of your
-                    bookmarks.
-                  </p>
-                  <div class="mx-auto md:mx-0">
-                    <a
-                      href="#"
-                      class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
-                      >More Info</a
-                    >
+                <div class="flex flex-col md:flex-row md:justify-around">
+                  <div class="flex items-center justify-center">
+                    <p class="pr-7">10:00 a.m.</p>
+                    <div class="flex flex-col">
+                      <div>
+                        <img
+                          src="/images/logos/cloudy.png"
+                          alt=""
+                          class="w-28"
+                        />
+                      </div>
+
+                      <p class="pl-2">Fair</p>
+                    </div>
+
+                    <p class="ml-4">29 deg C</p>
+                  </div>
+                  <div class="flex items-center justify-around pb-2">
+                    <div>
+                      <div class="flex">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/rainfall.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>1 mm</p>
+                          <p class="text-xs">Rainfall</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/dewpoint.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>25 deg C</p>
+                          <p class="text-xs">Dew Point</p>
+                        </div>
+                      </div>
+
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/winddirection.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>E 20 mph</p>
+                          <p class="text-xs">Wind</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/barometer.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>1013 mb</p>
+                          <p class="text-xs">Pressure</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/humidity.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>70%</p>
+                          <p class="text-xs">Humidity</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/visibility.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>10 km</p>
+                          <p class="text-xs">Visibility</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <!-- Panel 3 -->
-              <div
-                class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-3"
-              >
-                <!-- Panel Image -->
-                <div class="flex justify-center md:w-1/2">
-                  <img
-                    src="images/illustration-features-tab-3.svg"
-                    alt=""
-                    class="relative z-10"
-                  />
-                </div>
+              <div class="flex flex-col panel panel-3">
                 <!-- Panel Content -->
-                <div class="flex flex-col space-y-8 md:w-1/2">
-                  <h3
-                    class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
-                  >
-                    Share your bookmarks
-                  </h3>
-                  <p class="max-w-md text-center text-grayishBlue md:text-left">
-                    Easily share your bookmarks and collections with others.
-                    Create a shareable a link that you can send at the click of
-                    a button.
-                  </p>
-                  <div class="mx-auto md:mx-0">
-                    <a
-                      href="#"
-                      class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
-                      >More Info</a
-                    >
+                <div class="flex flex-col md:flex-row md:justify-around">
+                  <div class="flex items-center justify-center">
+                    <p class="pr-7">10:00 a.m.</p>
+                    <div class="flex flex-col">
+                      <div>
+                        <img
+                          src="/images/logos/cloudy.png"
+                          alt=""
+                          class="w-28"
+                        />
+                      </div>
+
+                      <p class="pl-2">Overcast</p>
+                    </div>
+
+                    <p class="ml-4">29 deg C</p>
+                  </div>
+                  <div class="flex items-center justify-around pb-2">
+                    <div>
+                      <div class="flex">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/rainfall.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>1 mm</p>
+                          <p class="text-xs">Rainfall</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/dewpoint.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>25 deg C</p>
+                          <p class="text-xs">Dew Point</p>
+                        </div>
+                      </div>
+
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/winddirection.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>E 20 mph</p>
+                          <p class="text-xs">Wind</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/barometer.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>1013 mb</p>
+                          <p class="text-xs">Pressure</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/humidity.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>70%</p>
+                          <p class="text-xs">Humidity</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/visibility.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>10 km</p>
+                          <p class="text-xs">Visibility</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 4 -->
+              <div class="flex flex-col panel panel-4">
+                <!-- Panel Content -->
+                <div class="flex flex-col md:flex-row md:justify-around">
+                  <div class="flex items-center justify-center">
+                    <p class="pr-7">10:00 a.m.</p>
+                    <div class="flex flex-col">
+                      <div>
+                        <img
+                          src="/images/logos/cloudy.png"
+                          alt=""
+                          class="w-28"
+                        />
+                      </div>
+
+                      <p class="pl-2">Cloudy</p>
+                    </div>
+
+                    <p class="ml-4">29 deg C</p>
+                  </div>
+                  <div class="flex items-center justify-around pb-2">
+                    <div>
+                      <div class="flex">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/rainfall.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>1 mm</p>
+                          <p class="text-xs">Rainfall</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/dewpoint.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>25 deg C</p>
+                          <p class="text-xs">Dew Point</p>
+                        </div>
+                      </div>
+
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/winddirection.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>E 20 mph</p>
+                          <p class="text-xs">Wind</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/barometer.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>1013 mb</p>
+                          <p class="text-xs">Pressure</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/humidity.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>70%</p>
+                          <p class="text-xs">Humidity</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/visibility.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>10 km</p>
+                          <p class="text-xs">Visibility</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 5 -->
+              <div class="flex flex-col panel panel-5">
+                <!-- Panel Content -->
+                <div class="flex flex-col md:flex-row md:justify-around">
+                  <div class="flex items-center justify-center">
+                    <p class="pr-7">10:00 a.ms.</p>
+                    <div class="flex flex-col">
+                      <div>
+                        <img
+                          src="/images/logos/cloudy.png"
+                          alt=""
+                          class="w-28"
+                        />
+                      </div>
+
+                      <p class="pl-2">Clear</p>
+                    </div>
+
+                    <p class="ml-4">29 deg C</p>
+                  </div>
+                  <div class="flex items-center justify-around pb-2">
+                    <div>
+                      <div class="flex">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/rainfall.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>1 mm</p>
+                          <p class="text-xs">Rainfall</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/dewpoint.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>25 deg C</p>
+                          <p class="text-xs">Dew Point</p>
+                        </div>
+                      </div>
+
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/winddirection.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>E 20 mph</p>
+                          <p class="text-xs">Wind</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/barometer.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>1013 mb</p>
+                          <p class="text-xs">Pressure</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/humidity.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>70%</p>
+                          <p class="text-xs">Humidity</p>
+                        </div>
+                      </div>
+                      <div class="flex mt-3">
+                        <div>
+                          <img
+                            src="/images/wxsvgs/visibility.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-2">
+                          <p>10 km</p>
+                          <p class="text-xs">Visibility</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
