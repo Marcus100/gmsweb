@@ -129,7 +129,7 @@
         </div>
       </section>
 
-      <!-- Features Tabs -->
+      <!-- FORECAST SECTION -->
       <section id="tabs">
         <div class="mx-3 mt-2">
           <!-- Tabs/Panels Container -->
@@ -144,10 +144,10 @@
                 data-target="panel-1"
               >
                 <div
-                  class="pt-2 border-b-4 border-orange-600"
+                  class="pt-2 border-b-4 border-orange-600 uppercase"
                   data-target="panel-1"
                 >
-                  This Hour
+                  Hourly
                 </div>
               </div>
 
@@ -156,7 +156,7 @@
                 class="flex justify-center text-center cursor-pointer text-gray-700 border-b md:border-b-0 hover:text-orange-500 tab"
                 data-target="panel-2"
               >
-                <div class="pt-2" data-target="panel-2">Today</div>
+                <div class="pt-2 uppercase" data-target="panel-2">Mon</div>
               </div>
 
               <!-- Tab 3 -->
@@ -164,8 +164,8 @@
                 class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-orange-500 tab"
                 data-target="panel-3"
               >
-                <div class="pt-2 text-gray-700" data-target="panel-3">
-                  Tomorrow
+                <div class="pt-2 text-gray-700 uppercase" data-target="panel-3">
+                  Tues
                 </div>
               </div>
               <!-- Tab 4 -->
@@ -173,49 +173,55 @@
                 class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-orange-500 tab"
                 data-target="panel-3"
               >
-                <div class="pt-2 text-gray-700" data-target="panel-3">WED</div>
+                <div class="pt-2 text-gray-700 uppercase" data-target="panel-3">
+                  Wed
+                </div>
               </div>
               <!-- Tab 5 -->
               <div
                 class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-orange-500 tab"
                 data-target="panel-3"
               >
-                <div class="pt-2 text-gray-700" data-target="panel-3">THUR</div>
+                <div class="pt-2 text-gray-700 uppercase" data-target="panel-3">
+                  Thur
+                </div>
               </div>
             </div>
 
             <!-- Tab Panels -->
-            <div id="panels" class="container">
+            <div id="panels" class="container text-base">
               <!-- Panel 1 -->
               <div class="flex flex-col panel panel-1">
                 <!-- Panel Content -->
                 <div class="flex flex-col">
-                  <div class="flex">
-                    <div>
-                      <img
-                        src="/images/currentwx/wi-time-3.svg"
-                        alt=""
-                        class="w-8"
-                      />
-                    </div>
-
-                    <h3 class="py-1 mx-auto font-semibold">
-                      Conditions @ 10:00 a.m.
-                    </h3>
-                  </div>
+                  <h3 class="py-1 mx-auto font-semibold">
+                    <img
+                      src="/images/currentwx/wi-time-3.svg"
+                      alt=""
+                      class="w-8 inline"
+                    />10:00 a.m.
+                  </h3>
 
                   <div class="border"></div>
                   <div class="flex flex-col p-2">
-                    <div class="flex items-center">
+                    <div class="flex items-center justify-center">
                       <span
                         ><img
                           src="/images/logos/cloudy.png"
                           alt=""
                           class="w-28"
                       /></span>
-                      <p>Party cloudy and windy conditions dominate Grenada</p>
+                      <p class="pl-2">Party Cloudy</p>
+                      <span class="flex">
+                        <img
+                          src="/images/currentwx/wi-thermometer.svg"
+                          alt=""
+                          class="w-8"
+                        />
+                        <p>Temperature:</p>
+                      </span>
                     </div>
-                    <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-around">
                       <div>
                         <span class="flex">
                           <img
@@ -223,7 +229,7 @@
                             alt=""
                             class="w-8"
                           />
-                          <p>Wind:</p>
+                          <p>Precipitation: 0%</p>
                         </span>
                         <span class="flex">
                           <img
@@ -231,23 +237,16 @@
                             alt=""
                             class="w-8"
                           />
-                          <p>Temperature:</p>
+                          <p>Dew Point: 25C</p>
                         </span>
-                        <span class="flex">
-                          <img
-                            src="/images/currentwx/wi-humidity.svg"
-                            alt=""
-                            class="w-8"
-                          />
-                          <p>Humidity:</p>
-                        </span>
+
                         <span class="flex">
                           <img
                             src="/images/currentwx/wi-rain.svg"
                             alt=""
                             class="w-8"
                           />
-                          <p>Rainfall:</p>
+                          <p>Rainfall: 0.0mm</p>
                         </span>
                       </div>
                       <div>
@@ -257,7 +256,7 @@
                             alt=""
                             class="w-8"
                           />
-                          <p>Pressure:</p>
+                          <p>Rainfall: 0mm</p>
                         </span>
                         <span class="flex">
                           <img
@@ -265,7 +264,7 @@
                             alt=""
                             class="w-8"
                           />
-                          <p>High/Low:</p>
+                          <p>Humidity: 28%</p>
                         </span>
                         <span class="flex">
                           <img
@@ -273,15 +272,7 @@
                             alt=""
                             class="w-8"
                           />
-                          <p>Dew Point:</p>
-                        </span>
-                        <span class="flex">
-                          <img
-                            src="/images/currentwx/wi-barometer.svg"
-                            alt=""
-                            class="w-8"
-                          />
-                          <p>Visibility:</p>
+                          <p>Visibility: km</p>
                         </span>
                       </div>
                     </div>
@@ -364,7 +355,7 @@
       <!-- CONTENT SECTION -->
       <section>
         <div
-          class="p-4 max-w-4xl grid gap-y-3 md:gap-x-6 md:grid-cols-2 md:grid-rows-5"
+          class="p-4 max-w-4xl grid gap-y-3 md:gap-x-3 md:grid-cols-2 md:grid-rows-5 mx-auto"
         >
           <!--  DAILY BRIEFING-->
           <div class="md:row-span-3 md:order-1">
@@ -499,7 +490,7 @@
           <div class="md:order-5">
             <!-- OTHER NEWS CONTAINER -->
             <!-- HORIZONTAL CARD -->
-            <div class="bg-sky-50 mx-auto overflow-hidden rounded shadow">
+            <div class="bg-sky-50 overflow-hidden rounded shadow">
               <a href="#">
                 <!-- Flex Container -->
                 <div class="flex md:flex-row-reverse">
@@ -579,7 +570,7 @@
           <div class="md:row-span-3 md:order-4">
             <!-- REPORTS CONTAINER -->
             <div
-              class="mx-auto bg-sky-50 border border-gray-200 rounded shadow overflow-hidden"
+              class="bg-sky-50 border border-gray-200 rounded shadow overflow-hidden"
             >
               <a href="#">
                 <img
@@ -634,7 +625,7 @@
         class="flex flex-col max-w-7xl items-center justify-center mx-auto p-5 text-gray-300 text-base"
       >
         <div>
-          <a href="#" class="flex items-center">
+          <a href="#" class="flex items-center justify-center">
             <img src="/images/logos/cloudy.png" alt="" class="w-28" />
             <p
               class="pl-2 font-bold tracking-wide text-lg hover:text-orange-400"
@@ -741,7 +732,7 @@
             ><img
               src="images/logos/gaalogo.png"
               alt="The Grenada Airports' Authority Official Logo"
-              class="w-36"
+              class="w-32"
           /></a>
           <p class="pl-2 text-sm">
             Copyright
