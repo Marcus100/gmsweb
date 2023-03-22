@@ -193,87 +193,118 @@
               <!-- Panel 1 -->
               <div class="flex flex-col panel panel-1">
                 <!-- Panel Content -->
-                <div class="flex flex-col">
-                  <h3 class="py-1 mx-auto font-semibold">
-                    <img
-                      src="/images/currentwx/wi-time-3.svg"
-                      alt=""
-                      class="w-8 inline"
-                    />10:00 a.m.
-                  </h3>
-
-                  <div class="border"></div>
-                  <div class="flex flex-col p-2">
-                    <div class="flex items-center justify-center">
-                      <span
-                        ><img
+                <div class="flex flex-col md:flex-row md:justify-around">
+                  <div class="flex items-center justify-center">
+                    <h3 class="py-1 font-semibold">
+                      <img
+                        src="/images/currentwx/wi-time-3.svg"
+                        alt=""
+                        class="w-8 inline"
+                      />10:00 a.m.
+                    </h3>
+                    <div class="flex flex-col">
+                      <div>
+                        <img
                           src="/images/logos/cloudy.png"
                           alt=""
                           class="w-28"
-                      /></span>
-                      <p class="pl-2">Party Cloudy</p>
-                      <span class="flex">
-                        <img
-                          src="/images/currentwx/wi-thermometer.svg"
-                          alt=""
-                          class="w-8"
                         />
-                        <p>Temperature:</p>
-                      </span>
+                      </div>
+
+                      <p class="pl-2">Party Cloudy</p>
                     </div>
-                    <div class="flex items-center justify-around">
-                      <div>
-                        <span class="flex">
+
+                    <span class="flex">
+                      <img
+                        src="/images/currentwx/wi-thermometer.svg"
+                        alt=""
+                        class="w-8"
+                      />
+                      <p>29 deg C</p>
+                    </span>
+                  </div>
+                  <div class="flex items-center justify-around">
+                    <div>
+                      <div class="flex">
+                        <div>
                           <img
-                            src="/images/currentwx/wi-strong-wind.svg"
+                            src="/images/currentwx/wi-raindrop.svg"
                             alt=""
                             class="w-8"
                           />
-                          <p>Precipitation: 0%</p>
-                        </span>
-                        <span class="flex">
+                        </div>
+                        <div class="flex flex-col pl-1">
+                          <p>1 mm</p>
+                          <p class="text-xs">Rainfall</p>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div>
                           <img
                             src="/images/currentwx/wi-thermometer.svg"
                             alt=""
                             class="w-8"
                           />
-                          <p>Dew Point: 25C</p>
-                        </span>
-
-                        <span class="flex">
-                          <img
-                            src="/images/currentwx/wi-rain.svg"
-                            alt=""
-                            class="w-8"
-                          />
-                          <p>Rainfall: 0.0mm</p>
-                        </span>
+                        </div>
+                        <div class="flex flex-col pl-1">
+                          <p>25 deg C</p>
+                          <p class="text-xs">Dew Point</p>
+                        </div>
                       </div>
-                      <div>
-                        <span class="flex">
+
+                      <div class="flex">
+                        <div>
+                          <img
+                            src="/images/currentwx/wi-wind-deg.svg"
+                            alt=""
+                            class="w-8"
+                          />
+                        </div>
+                        <div class="flex flex-col pl-1">
+                          <p>E 20 mph</p>
+                          <p class="text-xs">Wind</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex">
+                        <div>
                           <img
                             src="/images/currentwx/wi-barometer.svg"
                             alt=""
                             class="w-8"
                           />
-                          <p>Rainfall: 0mm</p>
-                        </span>
-                        <span class="flex">
+                        </div>
+                        <div class="flex flex-col pl-1">
+                          <p>1013 mb</p>
+                          <p class="text-xs">Pressure</p>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div>
                           <img
-                            src="/images/currentwx/wi-barometer.svg"
+                            src="/images/currentwx/wi-humidity.svg"
                             alt=""
                             class="w-8"
                           />
-                          <p>Humidity: 28%</p>
-                        </span>
-                        <span class="flex">
+                        </div>
+                        <div class="flex flex-col pl-1">
+                          <p>1 mm</p>
+                          <p class="text-xs">Humidity</p>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div>
                           <img
-                            src="/images/currentwx/wi-barometer.svg"
+                            src="/images/currentwx/visibility-svgrepo-com.svg"
                             alt=""
                             class="w-8"
                           />
-                          <p>Visibility: km</p>
-                        </span>
+                        </div>
+                        <div class="flex flex-col pl-1">
+                          <p>10 km</p>
+                          <p class="text-xs">Visibility</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -569,16 +600,14 @@
           <!-- REPORTS -->
           <div class="md:row-span-3 md:order-4">
             <!-- REPORTS CONTAINER -->
-            <div
-              class="bg-sky-50 border border-gray-200 rounded shadow overflow-hidden"
-            >
+            <div class="overflow-hidden">
               <a href="#">
                 <img
                   src="https://flowbite.com/docs/images/blog/image-1.jpg"
                   alt=""
                 />
               </a>
-              <div class="p-2">
+              <div class="p-2 bg-sky-50">
                 <a href="#">
                   <h5
                     class="mb-2 text-lg font-bold tracking-tight text-center uppercase text-orange-600"
