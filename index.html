@@ -182,10 +182,30 @@
                 >
                   <div class="pt-2 uppercase" data-target="panel-5">Thur</div>
                 </div>
+
+                <!-- Tab 6 -->
+                <div
+                  class="flex justify-center text-center cursor-pointer hover:text-orange-500 tab"
+                  data-target="panel-1"
+                >
+                  <div class="pt-2 uppercase" data-target="panel-1">Marine</div>
+                </div>
+                <!-- Tab 7 -->
+                <div
+                  class="flex justify-center text-center cursor-pointer hover:text-orange-500 tab"
+                  data-target="panel-1"
+                >
+                  <div class="pt-2 uppercase" data-target="panel-1">
+                    Satellite
+                  </div>
+                </div>
               </div>
 
               <!-- Tab Panels -->
-              <div id="panels" class="container text-base my-2 border">
+              <div
+                id="panels"
+                class="container text-base my-2 pb-2 px-2 border"
+              >
                 <!-- Panel 1 -->
                 <div class="flex flex-col panel panel-1">
                   <!-- Panel Content -->
@@ -390,23 +410,60 @@
                 </div>
 
                 <!-- Panel 2 -->
-                <div class="flex flex-col panel panel-2 hidden my-2">
+                <div class="flex flex-col panel panel-2 hidden">
                   <!-- Panel Content -->
-                  <div class="flex flex-col md:flex-row md:justify-around">
+                  <!-- 1 -->
+                  <div>
                     <div>
                       <p class="text-right pr-1 text-xs pt-1 font-light">
                         Validity: 6:00 a.m to 6:00 a.m. (24 hrs)
                       </p>
                     </div>
-                    <div class="flex flex-col items-center">
-                      <div class="flex items-center justify-end">
+                  </div>
+                  <!-- 2 -->
+                  <div>
+                    <div class="flex">
+                      <div class="flex flex-row">
                         <div>
                           <p>Day</p>
-                          <img
-                            src="/images/logos/cloudy.png"
-                            alt=""
-                            class="w-28"
-                          />
+                        </div>
+                        <div>
+                          <div class="flex">
+                            <p class="pr-1">25</p>
+                            <svg
+                              class="w-4 fill-current text-gray-200"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xml:space="preserve"
+                              viewBox="0 0 25.924 25.924"
+                            >
+                              <path
+                                d="M4.699 2.278A4.704 4.704 0 0 0 0 6.977c0 2.593 2.107 4.698 4.699 4.698s4.7-2.106 4.699-4.698a4.704 4.704 0 0 0-4.699-4.699zm0 7.049a2.353 2.353 0 0 1-2.35-2.35c0-1.294 1.055-2.35 2.35-2.35s2.35 1.055 2.35 2.35a2.353 2.353 0 0 1-2.35 2.35zm16.625 10.644c-3.91 0-6.227-2.463-6.227-6.369 0-4.342 2.721-6.456 6.195-6.456 1.592 0 2.836.349 3.703.725l.928-3.475c-.782-.435-2.52-.869-4.807-.869-5.904 0-10.652 3.678-10.652 10.336 0 5.558 3.475 9.783 10.221 9.783 2.346 0 4.198-.464 4.979-.841l-.637-3.473c-.896.377-2.344.639-3.703.639z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <img
+                          src="/images/logos/cloudy.png"
+                          alt=""
+                          class="w-28"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="/images/logos/cloudy.png"
+                          alt=""
+                          class="w-28"
+                        />
+                      </div>
+                      <div class="flex flex-col">
+                        <div>
+                          <div>
+                            <p>Night</p>
+                          </div>
+                        </div>
+                        <div>
                           <div>
                             <div class="flex">
                               <p class="pr-1">25</p>
@@ -423,30 +480,108 @@
                             </div>
                           </div>
                         </div>
-                        <div>
-                          <p>Night</p>
-                          <img
-                            src="/images/logos/cloudy.png"
-                            alt=""
-                            class="w-28"
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div>
+                    <div class="flex mt-3">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          class="w-7"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
                           />
-                          <div>
-                            <div class="flex">
-                              <p class="pr-1">25</p>
-                              <svg
-                                class="w-4 fill-current text-gray-200"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xml:space="preserve"
-                                viewBox="0 0 25.924 25.924"
-                              >
-                                <path
-                                  d="M4.699 2.278A4.704 4.704 0 0 0 0 6.977c0 2.593 2.107 4.698 4.699 4.698s4.7-2.106 4.699-4.698a4.704 4.704 0 0 0-4.699-4.699zm0 7.049a2.353 2.353 0 0 1-2.35-2.35c0-1.294 1.055-2.35 2.35-2.35s2.35 1.055 2.35 2.35a2.353 2.353 0 0 1-2.35 2.35zm16.625 10.644c-3.91 0-6.227-2.463-6.227-6.369 0-4.342 2.721-6.456 6.195-6.456 1.592 0 2.836.349 3.703.725l.928-3.475c-.782-.435-2.52-.869-4.807-.869-5.904 0-10.652 3.678-10.652 10.336 0 5.558 3.475 9.783 10.221 9.783 2.346 0 4.198-.464 4.979-.841l-.637-3.473c-.896.377-2.344.639-3.703.639z"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                          />
+                        </svg>
                       </div>
+                      <div class="flex flex-col pl-2">
+                        <p>
+                          Mostly fair, increasing in cloudiness as the day
+                          progresses, with light afternoon and nighttime showers
+                        </p>
+                        <p class="text-xs">Weather</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div>
+                    <div class="flex mt-3">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          class="w-7"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex flex-col pl-2">
+                        <p>
+                          ENE'ly to E'ly @ 10 to 20 mph, becoming variable to
+                          calm at times
+                        </p>
+                        <p class="text-xs">Wind</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div>
+                    <div class="flex mt-3">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          class="w-7"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex flex-col pl-2">
+                        <p>Moderate with waves 4 to 6 feet in open water.</p>
+                        <p class="text-xs">Seas</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div>
+                    <div class="flex">
                       <div>
                         <div class="flex mt-3">
                           <div>
@@ -501,7 +636,41 @@
                           </div>
                           <div class="flex flex-col pl-2">
                             <p>10 km</p>
-                            <p class="text-xs">Low Tide</p>
+                            <p class="text-xs">High Tide</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 7 -->
+                  <div>
+                    <div class="flex">
+                      <div>
+                        <div class="flex mt-3">
+                          <div>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              class="w-7"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                              />
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="flex flex-col pl-2">
+                            <p>10 km</p>
+                            <p class="text-xs">Sunrise</p>
                           </div>
                         </div>
                       </div>
@@ -530,130 +699,7 @@
                           </div>
                           <div class="flex flex-col pl-2">
                             <p>10 km</p>
-                            <p class="text-xs">Low Tide</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- SEA -->
-                      <div class="flex">
-                        <div>
-                          <div class="flex mt-3">
-                            <div>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.5"
-                                class="w-7"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
-                                />
-                              </svg>
-                            </div>
-                            <div class="flex flex-col pl-2">
-                              <p>10 km</p>
-                              <p class="text-xs">Low Tide</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div class="flex mt-3">
-                            <div>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.5"
-                                class="w-7"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
-                                />
-                              </svg>
-                            </div>
-                            <div class="flex flex-col pl-2">
-                              <p>10 km</p>
-                              <p class="text-xs">High Tide</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="flex">
-                          <div>
-                            <div class="flex mt-3">
-                              <div>
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="1.5"
-                                  class="w-7"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                                  />
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
-                                  />
-                                </svg>
-                              </div>
-                              <div class="flex flex-col pl-2">
-                                <p>10 km</p>
-                                <p class="text-xs">Sunrise</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <div class="flex mt-3">
-                              <div>
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="1.5"
-                                  class="w-7"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                                  />
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
-                                  />
-                                </svg>
-                              </div>
-                              <div class="flex flex-col pl-2">
-                                <p>10 km</p>
-                                <p class="text-xs">Sunset</p>
-                              </div>
-                            </div>
+                            <p class="text-xs">Sunset</p>
                           </div>
                         </div>
                       </div>
