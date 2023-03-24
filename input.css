@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* BACKGROUND IMAGE */
+#fcst-bg-img {
+  background-image: url("../images/bgimages/fcsthome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* HAMBURGER MENU */
 .hamburger {
   cursor: pointer;
