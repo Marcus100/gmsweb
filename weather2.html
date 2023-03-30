@@ -28,7 +28,7 @@
                   <p
                     class="pl-2 font-bold tracking-wide text-lg hover:text-orange-400"
                   >
-                    Grenada Met Office
+                    Grenada Met Service
                   </p>
                 </a>
               </div>
@@ -39,7 +39,6 @@
               <a href="#">Resources</a>
               <a href="#">About Us</a>
               <a href="#">Contact Us</a>
-              <a href="#">More</a>
             </div>
 
             <!-- MOBILE BUTTON -->
@@ -129,7 +128,7 @@
     </header>
 
     <!-- MAIN CONTAINER -->
-    <div class="items-center justify-center mx-auto">
+    <div class="container items-center justify-center mx-auto">
       <!-- ALERTS AND ADVISORIES SECTION -->
       <section class="mx-3">
         <div
@@ -144,81 +143,79 @@
       </section>
 
       <!-- WEATHER SECTION SECTION -->
-      <div id="fcst-bg-img">
+      <div id="fcst-bg-img" class="py-4 my-2">
         <section id="tabs">
-          <div class="mx-5 py-4 my-2">
-            <!-- TABS/PANELS CONTAINER -->
+          <div class="mx-3">
+            <!-- Tabs/Panels Container -->
             <div
               class="container max-w-4xl text-gray-200 bg-sky-900 border-gray-700 bg-opacity-60 mx-auto my-2"
             >
-              <!-- TABS FLEX CONTAINER -->
+              <!-- Tabs Flex Container -->
               <div
                 class="flex justify-between border rounded p-2 pt-0 uppercase items-center text-sm"
               >
-                <!-- TAB 1: HOURLY -->
+                <!-- Tab 1 -->
                 <div
-                  class="flex justify-center items-center text-center cursor-pointer hover:text-orange-400 tab"
+                  class="flex justify-center items-center text-center cursor-pointer hover:text-orange-500 tab"
                   data-target="panel-1"
                 >
                   <div class="pt-2 uppercase" data-target="panel-1">Hourly</div>
                 </div>
 
-                <!-- TAB 2: DAY 1 -->
+                <!-- Tab 2 -->
                 <div
-                  class="flex justify-center text-center cursor-pointer md:border-b-0 hover:text-orange-400 tab"
+                  class="flex justify-center text-center cursor-pointer md:border-b-0 hover:text-orange-500 tab"
                   data-target="panel-2"
                 >
                   <div class="pt-2 uppercase" data-target="panel-2">Mon</div>
                 </div>
 
-                <!-- TAB 3: DAY 2 -->
+                <!-- Tab 3 -->
                 <div
-                  class="flex justify-center text-center cursor-pointer hover:text-orange-400 tab"
+                  class="flex justify-center text-center cursor-pointer hover:text-orange-500 tab"
                   data-target="panel-3"
                 >
                   <div class="pt-2 uppercase" data-target="panel-3">Tues</div>
                 </div>
-                <!-- TAB 4: DAY 3 -->
+                <!-- Tab 4 -->
                 <div
-                  class="flex justify-center text-center cursor-pointer hover:text-orange-400 tab"
+                  class="flex justify-center text-center cursor-pointer hover:text-orange-500 tab"
                   data-target="panel-4"
                 >
                   <div class="pt-2 uppercase" data-target="panel-4">Wed</div>
                 </div>
-                <!--TAB 5: DAY 4 -->
+                <!-- Tab 5 -->
                 <div
-                  class="flex justify-center text-center cursor-pointer md:border-b-0 hover:text-orange-400 tab"
+                  class="flex justify-center text-center cursor-pointer md:border-b-0 hover:text-orange-500 tab"
                   data-target="panel-5"
                 >
                   <div class="pt-2 uppercase" data-target="panel-5">Thur</div>
                 </div>
 
-                <!-- TAB 6: MARINE -->
+                <!-- Tab 6 -->
                 <div
-                  class="flex justify-center text-center cursor-pointer hover:text-orange-400 tab"
+                  class="flex justify-center text-center cursor-pointer hover:text-orange-500 tab"
                   data-target="panel-6"
                 >
                   <div class="pt-2 uppercase" data-target="panel-6">Marine</div>
                 </div>
               </div>
 
-              <!-- TAB PANELS -->
+              <!-- Tab Panels -->
               <div
                 id="panels"
                 class="container text-base my-2 pb-2 px-2 border rounded"
               >
-                <!-- PANEL 1: HOURLY -->
+                <!-- Panel 1 -->
                 <div class="flex flex-col panel panel-1">
-                  <!-- PANEL CONTENT -->
+                  <!-- Panel Content -->
                   <div class="flex flex-col md:flex-row md:justify-around">
-                    <!-- LAST UPDATED -->
                     <div>
                       <p class="text-right pr-1 text-xs pt-1 font-light">
                         Last updated: 10:00 a.m.
                       </p>
                     </div>
                     <div class="flex flex-col items-center justify-center">
-                      <!-- FLEX BOX 1 -->
                       <div class="flex justify-evenly items-center">
                         <div class="w-1/3">
                           <p class="mr-7 text-xl text-center">Partly Cloudy</p>
@@ -244,7 +241,6 @@
                           </svg>
                         </div>
                       </div>
-                      <!-- FLEXBOX 2 -->
                       <div>
                         <p class="text-xl">Light showers</p>
                       </div>
@@ -418,28 +414,29 @@
                   </div>
                 </div>
 
-                <!-- PANEL 2: DAY 1 -->
-                <div class="flex flex-col panel panel-2 hidden mx-3">
-                  <!-- PANEL CONTENT -->
-                  <!-- VALIDITY -->
+                <!-- Panel 2 -->
+                <div class="flex flex-col panel panel-2 hidden">
+                  <!-- Panel Content -->
+                  <!-- 1 -->
                   <div>
-                    <p class="text-right pr-1 text-xs pt-1 font-light">
-                      Validity: 6:00 a.m to 6:00 a.m. (24 hrs)
-                    </p>
+                    <div>
+                      <p class="text-right pr-1 text-xs pt-1 font-light">
+                        Validity: 6:00 a.m to 6:00 a.m. (24 hrs)
+                      </p>
+                    </div>
                   </div>
-
-                  <!-- IMAGE, TIME AND TEMP -->
-                  <div class="mt-2">
-                    <div class="flex text-xl justify-around">
-                      <div class="flex flex-col">
+                  <!-- 2 -->
+                  <div>
+                    <div class="flex">
+                      <div class="flex flex-row">
                         <div>
                           <p>Day</p>
                         </div>
                         <div>
                           <div class="flex">
-                            <p class="pr-1 text-3xl">25</p>
+                            <p class="pr-1">25</p>
                             <svg
-                              class="w-9 fill-current text-gray-200"
+                              class="w-4 fill-current text-gray-200"
                               xmlns="http://www.w3.org/2000/svg"
                               xml:space="preserve"
                               viewBox="0 0 25.924 25.924"
@@ -453,16 +450,16 @@
                       </div>
                       <div>
                         <img
-                          src="/images/currentwx/fair.png"
+                          src="/images/logos/cloudy.png"
                           alt=""
-                          class="w-24"
+                          class="w-28"
                         />
                       </div>
                       <div>
                         <img
-                          src="/images/currentwx/mostlyfair.png"
+                          src="/images/logos/cloudy.png"
                           alt=""
-                          class="w-24"
+                          class="w-28"
                         />
                       </div>
                       <div class="flex flex-col">
@@ -474,9 +471,9 @@
                         <div>
                           <div>
                             <div class="flex">
-                              <p class="pr-1 pt-2 text-3xl">25</p>
+                              <p class="pr-1">25</p>
                               <svg
-                                class="w-9 fill-current text-gray-200"
+                                class="w-4 fill-current text-gray-200"
                                 xmlns="http://www.w3.org/2000/svg"
                                 xml:space="preserve"
                                 viewBox="0 0 25.924 25.924"
@@ -491,19 +488,28 @@
                       </div>
                     </div>
                   </div>
-                  <!-- WEATHER FORECAST -->
+                  <!-- 3 -->
                   <div>
                     <div class="flex mt-3">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          class="w-7"
                           viewBox="0 0 24 24"
-                          class="w-7 fill-current text-gray-200"
                         >
                           <path
-                            d="M6.316 21H5.212l.935-2h1.105zm2.065 2 1.871-4H9.147l-1.87 4zm3.468-1 1.403-3h-1.105l-1.403 3zm3.298-3-2.339 5h1.105l2.339-5zm3 0-.935 2h1.104l.936-2zm-11.28-1h-1.43a3.438 3.438 0 0 1 0-6.875l.012.001A3.369 3.369 0 0 1 9.4 9.24a5.494 5.494 0 0 1 10.548-.521A4.807 4.807 0 0 1 18.187 18zM3 14.562A2.44 2.44 0 0 0 5.438 17h12.75a3.807 3.807 0 0 0 1.394-7.351l-.429-.17-.15-.436a4.494 4.494 0 0 0-8.629.426l-.232.99-.986-.25a2.407 2.407 0 0 0-.594-.084 2.443 2.443 0 0 0-2.206 1.42l-.268.581h-.715A2.442 2.442 0 0 0 3 14.563z"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
                           />
-                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                          />
                         </svg>
                       </div>
                       <div class="flex flex-col pl-2">
@@ -515,27 +521,28 @@
                       </div>
                     </div>
                   </div>
-                  <!-- WIND -->
+                  <!-- 4 -->
                   <div>
                     <div class="flex mt-3">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          xml:space="preserve"
-                          viewBox="0 0 64 64"
-                          class="w-7 stroke-gray-200"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          class="w-7"
+                          viewBox="0 0 24 24"
                         >
-                          <g
-                            fill="none"
-                            stroke-miterlimit="10"
-                            stroke-width="2"
-                          >
-                            <circle cx="32" cy="32" r="31" />
-                            <circle cx="32" cy="32" r="4" />
-                            <path
-                              d="M23.515 23.515C18.828 28.201 15 48.999 15 48.999s20.799-3.827 25.485-8.514c4.687-4.688 4.686-12.285 0-16.971-4.685-4.686-12.284-4.687-16.97.001z"
-                            />
-                          </g>
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                          />
                         </svg>
                       </div>
                       <div class="flex flex-col pl-2">
@@ -547,30 +554,28 @@
                       </div>
                     </div>
                   </div>
-                  <!-- SEAS -->
+                  <!-- 5 -->
                   <div>
                     <div class="flex mt-3">
                       <div>
                         <svg
-                          class="w-7"
                           xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 -3.18 20.402 20.402"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          class="w-7"
+                          viewBox="0 0 24 24"
                         >
-                          <g
-                            fill="none"
-                            stroke="#e5e7eb"
+                          <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            stroke-width="2"
-                          >
-                            <path
-                              d="M1.169 12.54c1.5 0 1.5.5 3 .5s1.51-.5 3-.5 1.5.5 3 .5 1.5-.5 3-.5 1.5.5 3 .5 1.49-.5 3-.5"
-                            />
-                            <path
-                              d="M1.169 9.04a4.93 4.93 0 0 0 2.41-1.21c2.8-2 4.59.57 6.59-.18s1.38-4.31-1.94-5.11c4.76-3.58 8.31 0 8.68 2.68.26 1.82.44 3.31 2.26 3.82"
-                              data-name="primary"
-                            />
-                          </g>
+                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                          />
                         </svg>
                       </div>
                       <div class="flex flex-col pl-2">
@@ -579,25 +584,29 @@
                       </div>
                     </div>
                   </div>
-                  <!-- TIDES -->
+                  <!-- 6 -->
                   <div>
                     <div class="flex">
                       <div>
                         <div class="flex mt-3">
                           <div>
                             <svg
-                              class="w-9 fill-current text-gray-200"
                               xmlns="http://www.w3.org/2000/svg"
-                              data-name="Layer 1"
-                              viewBox="0 0 32 32"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              class="w-7"
+                              viewBox="0 0 24 24"
                             >
                               <path
-                                d="M14 7 9 2 4 7l1.413 1.416L8 5.833V14h2V5.833l2.586 2.581L14 7zm12.586.586L24 10.167V2h-2v8.167l-2.587-2.583L18 9l5 5 5-5-1.414-1.414zM20 20a3.438 3.438 0 0 1-3.051-2.316A1.007 1.007 0 0 0 16 17a.99.99 0 0 0-.947.679A3.44 3.44 0 0 1 12 20a3.438 3.438 0 0 1-3.051-2.316A1.007 1.007 0 0 0 8 17a.971.971 0 0 0-.947.679A3.44 3.44 0 0 1 4 20H2v2h2a4.932 4.932 0 0 0 4-1.987 5.02 5.02 0 0 0 8 0A4.932 4.932 0 0 0 20 22h10v-2Zm8 8a3.438 3.438 0 0 1-3.051-2.316A1.007 1.007 0 0 0 24 25a.99.99 0 0 0-.947.679A3.44 3.44 0 0 1 20 28a3.438 3.438 0 0 1-3.051-2.316A1.007 1.007 0 0 0 16 25a.971.971 0 0 0-.947.679A3.44 3.44 0 0 1 12 28H2v2h10a4.932 4.932 0 0 0 4-1.987 5.02 5.02 0 0 0 8 0A4.932 4.932 0 0 0 28 30h2v-2Z"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
                               />
                               <path
-                                d="M0 0h32v32H0z"
-                                data-name="&lt;Transparent Rectangle&gt;"
-                                style="fill: none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
                               />
                             </svg>
                           </div>
@@ -608,21 +617,25 @@
                         </div>
                       </div>
                       <div>
-                        <div class="flex m-3">
+                        <div class="flex mt-3">
                           <div>
                             <svg
-                              class="w-9 fill-current text-gray-200"
                               xmlns="http://www.w3.org/2000/svg"
-                              data-name="Layer 1"
-                              viewBox="0 0 32 32"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              class="w-7"
+                              viewBox="0 0 24 24"
                             >
                               <path
-                                d="M14 7 9 2 4 7l1.413 1.416L8 5.833V14h2V5.833l2.586 2.581L14 7zm12.586.586L24 10.167V2h-2v8.167l-2.587-2.583L18 9l5 5 5-5-1.414-1.414zM20 20a3.438 3.438 0 0 1-3.051-2.316A1.007 1.007 0 0 0 16 17a.99.99 0 0 0-.947.679A3.44 3.44 0 0 1 12 20a3.438 3.438 0 0 1-3.051-2.316A1.007 1.007 0 0 0 8 17a.971.971 0 0 0-.947.679A3.44 3.44 0 0 1 4 20H2v2h2a4.932 4.932 0 0 0 4-1.987 5.02 5.02 0 0 0 8 0A4.932 4.932 0 0 0 20 22h10v-2Zm8 8a3.438 3.438 0 0 1-3.051-2.316A1.007 1.007 0 0 0 24 25a.99.99 0 0 0-.947.679A3.44 3.44 0 0 1 20 28a3.438 3.438 0 0 1-3.051-2.316A1.007 1.007 0 0 0 16 25a.971.971 0 0 0-.947.679A3.44 3.44 0 0 1 12 28H2v2h10a4.932 4.932 0 0 0 4-1.987 5.02 5.02 0 0 0 8 0A4.932 4.932 0 0 0 28 30h2v-2Z"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
                               />
                               <path
-                                d="M0 0h32v32H0z"
-                                data-name="&lt;Transparent Rectangle&gt;"
-                                style="fill: none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
                               />
                             </svg>
                           </div>
@@ -634,19 +647,29 @@
                       </div>
                     </div>
                   </div>
-                  <!-- SUNSET AND SUNRISE -->
+                  <!-- 7 -->
                   <div>
                     <div class="flex">
                       <div>
                         <div class="flex mt-3">
-                          <div class="">
+                          <div>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              class="w-9 fill-current text-gray-200"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              class="w-7"
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M7 15a5 5 0 0 1 10 0 1 1 0 0 1-2 0 3 3 0 0 0-6 0 1 1 0 0 1-2 0Zm11-4.586.707-.707a1 1 0 0 0-1.414-1.414L16.586 9A1 1 0 1 0 18 10.414ZM20 16h1a1 1 0 0 0 0-2h-1a1 1 0 0 0 0 2ZM4 14H3a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm1.293-4.293.707.707A1 1 0 1 0 7.414 9l-.707-.707a1 1 0 0 0-1.414 1.414ZM4 18a1 1 0 0 0 1 1h14a1 1 0 0 0 0-2H5a1 1 0 0 0-1 1Zm4 3a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2Zm4-12a1 1 0 0 0 1-1V4.414l1.293 1.293a1 1 0 0 0 1.414-1.414l-3-3a1 1 0 0 0-1.416 0l-3 3a1 1 0 0 0 1.416 1.414L11 4.414V8a1 1 0 0 0 1 1Z"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                              />
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
                               />
                             </svg>
                           </div>
@@ -656,21 +679,26 @@
                           </div>
                         </div>
                       </div>
-                      <div class="ml-5">
+                      <div>
                         <div class="flex mt-3">
-                          <div class="mr-1">
+                          <div>
                             <svg
-                              class="w-7"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              class="w-7"
                               viewBox="0 0 24 24"
                             >
                               <path
-                                stroke="#e5e7eb"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 18H2m4.314-5.686L4.9 10.9m12.786 1.414L19.1 10.9M22 18h-2M7 18a5 5 0 0 1 10 0m5 4H2M16 5l-4 4m0 0L8 5m4 4V2"
+                                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                              />
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
                               />
                             </svg>
                           </div>
@@ -682,15 +710,9 @@
                       </div>
                     </div>
                   </div>
-                  <!-- EXPLAINER -->
-                  <div>
-                    <p class="text-right pr-1 text-xs pt-1 font-light">
-                      See definitions of terms
-                    </p>
-                  </div>
                 </div>
 
-                <!-- PANEL 3: DAY 2 -->
+                <!-- Panel 3 -->
                 <div class="flex flex-col hidden panel panel-3">
                   <!-- Panel Content -->
                   <div class="flex flex-col md:flex-row md:justify-around">
@@ -798,7 +820,7 @@
                   </div>
                 </div>
 
-                <!-- PANEL 4: DAY 3 -->
+                <!-- Panel 4 -->
                 <div class="flex flex-col hidden panel panel-4">
                   <!-- Panel Content -->
                   <div class="flex flex-col md:flex-row md:justify-around">
@@ -906,7 +928,7 @@
                   </div>
                 </div>
 
-                <!-- PANEL 5: DAY 4 -->
+                <!-- Panel 5 -->
                 <div class="flex flex-col hidden panel panel-5">
                   <!-- Panel Content -->
                   <div class="flex flex-col md:flex-row md:justify-around">
@@ -1014,7 +1036,7 @@
                   </div>
                 </div>
 
-                <!-- PANEL 6: DAY 5 -->
+                <!-- Panel 6 -->
                 <div class="flex flex-col hidden panel panel-6">
                   <!-- Panel Content -->
                   <div class="flex flex-col md:flex-row md:justify-around">
@@ -1132,17 +1154,19 @@
         <div
           class="p-4 max-w-4xl grid gap-y-3 md:gap-x-3 md:grid-cols-2 md:grid-rows-5 mx-auto"
         >
-          <!--  DAILY BRIEFING -->
+          <!--  DAILY BRIEFING-->
           <div class="md:row-span-3 md:order-1">
             <!-- DAILY BRIEFING CONTAINER -->
-            <div class="overflow-hidden">
+            <div
+              class="mx-auto bg-sky-50 border border-gray-200 rounded shadow overflow-hidden"
+            >
               <a href="#">
                 <img
                   src="https://flowbite.com/docs/images/blog/image-1.jpg"
                   alt=""
                 />
               </a>
-              <div class="p-2 bg-sky-50">
+              <div class="p-2">
                 <a href="#">
                   <h5
                     class="mb-2 text-lg font-bold tracking-tight text-center uppercase text-orange-600"
@@ -1342,51 +1366,48 @@
           <!-- REPORTS -->
           <div class="md:row-span-3 md:order-4">
             <!-- REPORTS CONTAINER -->
-
-            <div id="fcst-bg-img" class="py-4 my-2">
-              <section>
-                <div
-                  class="flex flex-col border m-2 p-2 items-center justify-center text-gray-200 bg-sky-900 border-gray-700 bg-opacity-60"
-                >
-                  <div class="uppercase pt-2">
-                    <p class="text-center text-xl">
-                      A Majority of Republican Voters Say the GOP Should Raise
-                      the Debt Limit — Without Cuts to Social Security or
-                      Medicare
-                    </p>
-                  </div>
-                  <div class="mt-3">
-                    <p class="text-center">
-                      Republicans in Congress have used the debt limit as a
-                      negotiating tool to further their own political agenda,
-                      however, Data for Progress finds 63 percent of voters
-                      agree that Republicans should raise the debt limit without
-                      forcing any spending cuts.
-                    </p>
-                  </div>
-                  <div class="flex justify-center mt-3">
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300"
+            <div class="overflow-hidden">
+              <a href="#">
+                <img
+                  src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-2 bg-sky-50">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-lg font-bold tracking-tight text-center uppercase text-orange-600"
+                  >
+                    Reports
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-center">
+                  Fair weather continues to dominate the Windward Islands as
+                  weak ridging dominates the area. An incoming cold front is
+                  approaching the Windward Islands from the north.
+                </p>
+                <div class="flex justify-center">
+                  <a
+                    href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300"
+                  >
+                    Read more
+                    <svg
+                      aria-hidden="true"
+                      class="w-4 h-4 ml-2 -mr-1"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      Read more
-                      <svg
-                        aria-hidden="true"
-                        class="w-4 h-4 ml-2 -mr-1"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </a>
-                  </div>
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
                 </div>
-              </section>
+              </div>
             </div>
           </div>
         </div>
@@ -1404,7 +1425,7 @@
             <p
               class="pl-2 font-bold tracking-wide text-lg hover:text-orange-400"
             >
-              Grenada Met Office
+              Grenada Met Service
             </p>
           </a>
         </div>
