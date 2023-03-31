@@ -11,7 +11,7 @@
     />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Grenada Meteorological Service</title>
+    <title>Grenada Meteorological Office</title>
   </head>
   <body
     class="antialiased bg-gradient-to-r from-[#6E95C0] via-[#89A7C9] to-[#9FB5CD] text-gray-900"
@@ -19,8 +19,8 @@
     <!-- HEADER & NAVIGATION -->
     <header class="sticky top-0 md:static">
       <nav class="bg-sky-800 text-gray-100 pl-3 pr-3">
-        <div class="container mx-auto">
-          <div class="flex justify-between">
+        <div class="container">
+          <div class="flex justify-between max-w-5xl mx-auto">
             <div class="z-40 flex py-1">
               <div>
                 <a href="#" class="flex items-center">
@@ -144,16 +144,14 @@
       </section>
 
       <!-- WEATHER SECTION SECTION -->
-      <div id="fcst-bg-img">
+      <div id="fcst-bg-img" class="mt-2">
         <section id="tabs">
-          <div class="mx-5 py-4 my-2">
+          <div class="mx-5 py-4">
             <!-- TABS/PANELS CONTAINER -->
-            <div
-              class="container max-w-4xl text-gray-200 bg-sky-900 border-gray-700 bg-opacity-60 mx-auto my-2"
-            >
+            <div class="container max-w-4xl text-gray-200 mx-auto">
               <!-- TABS FLEX CONTAINER -->
               <div
-                class="flex justify-between border rounded p-2 pt-0 uppercase items-center text-sm"
+                class="flex justify-between border rounded p-2 pt-0 uppercase items-center text-sm bg-sky-900 border-gray-300 bg-opacity-70 mx-auto"
               >
                 <!-- TAB 1: HOURLY -->
                 <div
@@ -205,7 +203,7 @@
               <!-- TAB PANELS -->
               <div
                 id="panels"
-                class="container text-base my-2 pb-2 px-2 border rounded"
+                class="container text-base my-2 pb-2 px-2 border rounded bg-sky-900 border-gray-300 bg-opacity-60 mx-auto"
               >
                 <!-- PANEL 1: HOURLY -->
                 <div class="flex flex-col panel panel-1">
@@ -1130,7 +1128,7 @@
       <!-- CONTENT SECTION -->
       <section>
         <div
-          class="p-4 max-w-4xl grid gap-y-3 md:gap-x-3 md:grid-cols-2 md:grid-rows-5 mx-auto"
+          class="grid gap-y-3 md:gap-x-3 md:grid-cols-2 md:grid-rows-5 mx-auto"
         >
           <!--  DAILY BRIEFING -->
           <div class="md:row-span-3 md:order-1">
@@ -1180,7 +1178,7 @@
             </div>
           </div>
           <!-- TROPICAL WEATHER OUTLOOK -->
-          <div class="md:order-2">
+          <div class="md:order-2 mx-2">
             <!-- TROPICAL WEATHER OUTLOOK CONTAINER -->
             <!-- HORIZONTAL CARD -->
             <div class="bg-sky-50 mx-auto overflow-hidden rounded shadow">
@@ -1220,7 +1218,7 @@
             </div>
           </div>
           <!-- WEATHER NEWS -->
-          <div class="md:order-3">
+          <div class="md:order-3 mx-2">
             <!-- WEATHER NEWS CONTAINER -->
             <!-- HORIZONTAL CARD -->
             <div class="bg-sky-50 mx-auto overflow-hidden rounded shadow">
@@ -1260,7 +1258,7 @@
             </div>
           </div>
           <!-- OTHER NEWS -->
-          <div class="md:order-5">
+          <div class="mx-2 md:order-5">
             <!-- OTHER NEWS CONTAINER -->
             <!-- HORIZONTAL CARD -->
             <div class="bg-sky-50 overflow-hidden rounded shadow">
@@ -1300,7 +1298,7 @@
             </div>
           </div>
           <!-- BLOG -->
-          <div class="md:order-6">
+          <div class="mx-2 md:order-6">
             <!-- BLOG CONTAINER -->
             <!-- HORIZONTAL CARD -->
             <div class="bg-sky-50 mx-auto overflow-hidden rounded shadow">
@@ -1323,16 +1321,17 @@
                     <h2
                       class="font-semibold text-xs text-left uppercase tracking-tight text-orange-600"
                     >
-                      Blog
+                      Grenada Met Office Website Launches
                     </h2>
 
                     <p class="text-xs text-gray-600">
-                      Tues, Mar 21, 2023, 10:00 AM
+                      Mon, Apr 21, 2023, 8:00 AM
                     </p>
 
-                    <p class="mt-1 leading-none">
-                      Tropical wave two expected to traverse Grenada on Tuesday
-                      bringing moderate showers.
+                    <p class="mt-1 leading-tight">
+                      Website is aimed to increase the visibility and reach of
+                      the service to meet the needs of the 21st century digital
+                      age.
                     </p>
                   </div>
                 </div>
@@ -1343,10 +1342,10 @@
           <div class="md:row-span-3 md:order-4">
             <!-- REPORTS CONTAINER -->
 
-            <div id="fcst-bg-img" class="py-4 my-2">
+            <div id="fcst-bg-img" class="py-7 px-5">
               <section>
                 <div
-                  class="flex flex-col border m-2 p-2 items-center justify-center text-gray-200 bg-sky-900 border-gray-700 bg-opacity-60"
+                  class="flex flex-col border m-2 p-2 items-center justify-center text-gray-200 bg-sky-900 border-gray-700 bg-opacity-80"
                 >
                   <div class="uppercase pt-2">
                     <p class="text-center text-xl">
