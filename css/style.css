@@ -590,6 +590,10 @@ video {
   margin: 0.75rem;
 }
 
+.m-7 {
+  margin: 1.75rem;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -650,10 +654,6 @@ video {
   margin-left: 1rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -680,6 +680,10 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .mt-20 {
