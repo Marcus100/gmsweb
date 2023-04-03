@@ -8,6 +8,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#report-bg-img {
+  background-image: url("../images/bgimages/fcst-bg-img.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* HAMBURGER MENU */
 .hamburger {
   cursor: pointer;
